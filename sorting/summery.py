@@ -9,6 +9,7 @@ data= {
 
 df=pd.DataFrame(data)
 
-df.sort_values( by="age", ascending=True, inplace=True)
 
-print(df)
+avg_salary= df['age'].mean()
+
+print(avg_salary)
