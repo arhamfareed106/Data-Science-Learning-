@@ -1,4 +1,5 @@
 import pandas as pd
+from sqlalchemy import true
 
 data= {
     "name": ["arham", "azhan", "ali", "ahmad"],
@@ -8,4 +9,7 @@ data= {
 }
 
 df = pd.DataFrame(data)
+print(df)
+df.drop(columns=['age'], inplace=True)
 
+print(df)
